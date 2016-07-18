@@ -2,9 +2,13 @@ package treinamentojava.ordenacao.ricardo;
 
 public class ItemVendaSimulator {
 
-	private int numeroUa;
-	
-	private int jan;	
+	private int numeroUa = 1;
+
+	private int jan;
+
+	public ItemVendaSimulator(int jan) {
+		this.jan = jan;
+	}
 
 	public int getNumeroUa() {
 		return numeroUa;
@@ -21,7 +25,5 @@ public class ItemVendaSimulator {
 	public void setJan(int jan) {
 		this.jan = jan;
 	}
-	
-	
-	
+
 }
