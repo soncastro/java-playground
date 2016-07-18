@@ -1,11 +1,12 @@
-package treinamentojava.ordenacao;
+package treinamentojava.ordenacao.comparator;
 
-import java.io.Externalizable;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class ExecutaOrdenacao {
+import treinamentojava.ordenacao.Jogador;
+
+public class ExecutaOrdenacaoComparator {
 
 	public static void main(String[] args) {
 

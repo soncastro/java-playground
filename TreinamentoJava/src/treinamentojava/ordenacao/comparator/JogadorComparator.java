@@ -1,6 +1,8 @@
-package treinamentojava.ordenacao;
+package treinamentojava.ordenacao.comparator;
 
 import java.util.Comparator;
+
+import treinamentojava.ordenacao.Jogador;
 
 public class JogadorComparator implements Comparator<Jogador> {
 
