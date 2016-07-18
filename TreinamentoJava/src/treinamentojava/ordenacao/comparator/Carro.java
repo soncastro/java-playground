@@ -1,11 +1,10 @@
-package treinamentojava.ordenacao;
+package treinamentojava.ordenacao.comparator;
 
-public class Jogador {
-	
+public class Carro {
+
 	private int numero;
-	
-	public Jogador(int numero)
-	{
+
+	public Carro(int numero) {
 		this.numero = numero;
 	}
 
@@ -16,7 +15,5 @@ public class Jogador {
 	public void setNumero(int numero) {
 		this.numero = numero;
 	}
-	
-	
 
 }
