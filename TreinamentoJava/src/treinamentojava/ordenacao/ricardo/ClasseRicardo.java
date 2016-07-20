@@ -33,7 +33,6 @@ public class ClasseRicardo {
 					listaItensVenda.set(j, itemVendaTemp);
 				}
 			}
-
 		}
 
 		System.out.println("Lista ordenada:");
