@@ -1,7 +1,6 @@
 package treinamentojava.bigdecimal;
 
 import java.math.BigDecimal;
-import java.math.MathContext;
 import java.math.RoundingMode;
 
 public class ExecutaExemploBigDecimal {
@@ -25,11 +24,9 @@ public class ExecutaExemploBigDecimal {
 		BigDecimal bigDecimal3 = new BigDecimal("5");
 		BigDecimal bigDecimal4 = new BigDecimal("3");
 		BigDecimal resultadoDivisaoBigDecimal = bigDecimal3.divide(bigDecimal4, 2, RoundingMode.UP);
-		
-		
+				
 		System.out.print("Resultado da divisão de 1/3 usando BigDecimal: ");
-		System.out.println(resultadoDivisaoBigDecimal);
-		
+		System.out.println(resultadoDivisaoBigDecimal);		
 		
 	}
 	
