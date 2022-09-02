@@ -1,6 +1,6 @@
 package treinamentojava.enumteste;
 
-public class MainEnumTese {
+public class MainEnumTeste01 {
 
 	public static void main(String[] args) {
 		

@@ -1,4 +1,4 @@
-package treinamentojava.aleatorio;
+package treinamentojava.aleatorio.bkp;
 
 //@Component
 public class Teste05 {
