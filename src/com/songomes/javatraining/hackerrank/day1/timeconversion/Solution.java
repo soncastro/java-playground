@@ -17,7 +17,7 @@ class Result {
 
         s = s.trim();
 
-        Pattern p = Pattern.compile("[0-1][0-2]:[0-5][0-9]:[0-5][0-9](AM|PM)");
+        Pattern p = Pattern.compile("[0-1][0-9]:[0-5][0-9]:[0-5][0-9](AM|PM)");
         Matcher m = p.matcher(s);
 
         if (!m.matches()) {
@@ -41,8 +41,11 @@ class Result {
 
         } else {
 
-            hora = String.valueOf(int_hora + 12);
-
+            if (int_hora == 12) {
+                hora = "12";
+            } else {
+                hora = String.valueOf(int_hora + 12);
+            }
         }
 
         String saida = hora + ":" + numeros[1] + ":" + numeros[2];

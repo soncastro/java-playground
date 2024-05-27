@@ -6,6 +6,7 @@ public class Teste08 {
 
         String teste = "abcdefg";
         System.out.println(teste.substring(1));
+        System.out.println(teste.substring(2, 3));
 
     }
 
