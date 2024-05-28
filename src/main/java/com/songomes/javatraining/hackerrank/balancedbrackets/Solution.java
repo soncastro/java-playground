@@ -13,7 +13,6 @@ class Result {
      * The function is expected to return a STRING.
      * The function accepts STRING s as parameter.
      */
-
     public static String isBalanced(String s) {
 
         final String YES = "YES";
@@ -46,17 +45,19 @@ class Result {
             if (fechado) {
                 for (int j = (brackets.size() - 1); j >= 0; j--) {
 
-                    if (brackets.get(j).isVisitado()) {
+                    Bracket j_bracket = brackets.get(j);
+
+                    if (j_bracket.possuiPar()) {
                         continue;
                     }
 
-                    if (brackets.get(j).isFechado()) {
+                    if (j_bracket.isFechado()) {
                         // do nothing
                     } else {
 
-                        if (getIndex(brackets.get(j).getBracket(), chaveA) == getIndex(c, chaveF)) {
-                            b.setVisitado(true);
-                            brackets.get(j).setVisitado(true);
+                        if (getIndex(j_bracket.getBracket(), chaveA) == getIndex(b.getBracket(), chaveF)) {
+                            b.possuiPar(true);
+                            j_bracket.possuiPar(true);
                             break;
                         } else {
                             break;
@@ -69,14 +70,14 @@ class Result {
         }
 
         for (Bracket b : brackets) {
-            if (b.isVisitado()) {
+            if (b.possuiPar()) {
                 // do nothings
             } else {
                 return NO;
             }
         }
 
-        return "YES";
+        return YES;
     }
 
     public static int getIndex(String c, String[] arrChave) {
@@ -96,7 +97,7 @@ class Bracket {
 
     private boolean fechado = false;
 
-    private boolean visitado = false;
+    private boolean possuiPar = false;
 
     public Bracket(String bracket, boolean fechado) {
         this.bracket = bracket;
@@ -115,12 +116,12 @@ class Bracket {
         this.fechado = fechado;
     }
 
-    public boolean isVisitado() {
-        return visitado;
+    public boolean possuiPar() {
+        return possuiPar;
     }
 
-    public void setVisitado(boolean visitado) {
-        this.visitado = visitado;
+    public void possuiPar(boolean possuiPar) {
+        this.possuiPar = possuiPar;
     }
 }
 
