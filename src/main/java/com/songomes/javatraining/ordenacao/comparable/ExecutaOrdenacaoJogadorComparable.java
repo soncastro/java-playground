@@ -15,7 +15,7 @@ public class ExecutaOrdenacaoJogadorComparable {
 		jogadores.add(new Jogador(1));
 		jogadores.add(new Jogador(7));
 		
-		System.out.println("Lista de jogadores n�o ordenada:");
+		System.out.println("Lista de jogadores nao ordenada:");
 		exibeJogadores(jogadores);
 		
 		Collections.sort(jogadores);

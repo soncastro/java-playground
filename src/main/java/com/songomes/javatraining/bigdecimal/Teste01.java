@@ -25,7 +25,7 @@ public class Teste01 {
 		BigDecimal bigDecimal4 = new BigDecimal("3");
 		BigDecimal resultadoDivisaoBigDecimal = bigDecimal3.divide(bigDecimal4, 2, RoundingMode.UP);
 				
-		System.out.print("Resultado da divis�o de 5/3 usando BigDecimal: ");
+		System.out.print("Resultado da divisao de 5/3 usando BigDecimal: ");
 		System.out.println(resultadoDivisaoBigDecimal);		
 		
 	}

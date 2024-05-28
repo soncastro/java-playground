@@ -14,7 +14,7 @@ public class ExecutaOrdenacaoLambda {
 		itens.add(new Item(2));
 		itens.add(new Item(4));
 
-		System.out.println("Lista n�o ordenada:");
+		System.out.println("Lista nao ordenada:");
 		// Express�o lambda
 		itens.forEach(item -> System.out.println(item.getNumero()));
 
@@ -30,7 +30,7 @@ public class ExecutaOrdenacaoLambda {
 		});
 
 		System.out.println("Lista ordenada:");
-		// Express�o lambda
+		// Expressao lambda
 		itens.forEach(item -> System.out.println(item.getNumero()));
 
 	}

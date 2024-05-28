@@ -15,7 +15,7 @@ public class ExecutaOrdenacaoCarroComparatorTeste2 {
 		// carros.add(new Carro(5));
 		// carros.add(new Carro(9));
 
-		System.out.println("Lista de carros n�o ordenada:");
+		System.out.println("Lista de carros nao ordenada:");
 		// exibeCarros(carros);
 
 		Collections.sort(carros, new CarroComparator());
