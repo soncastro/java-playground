@@ -17,7 +17,6 @@ public class Teste09 {
 
         System.out.println("Original list: " + list);
 
-        // Invertendo a lista
         Collections.reverse(list);
 
         System.out.println("Reversed list: " + list);
