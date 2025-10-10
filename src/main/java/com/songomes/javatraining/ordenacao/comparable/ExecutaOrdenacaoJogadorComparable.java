@@ -21,7 +21,6 @@ public class ExecutaOrdenacaoJogadorComparable {
 		Collections.sort(jogadores);
 		System.out.println("Lista de jogadores ordenada:");
 		exibeJogadores(jogadores);
-
 	}
 
 	public static void exibeJogadores(List<Jogador> jogadores) {
